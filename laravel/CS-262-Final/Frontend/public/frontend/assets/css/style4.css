@@ -1,0 +1,377 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@300&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+*,
+*::before,
+*::after {
+    transition: all 0.3s ease-in-out;
+}
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+html body {
+    overflow-x: hidden;
+    font-size: 15px;
+    line-height: 1.4;
+    background-color: #f4f6f8;
+    -webkit-font-smoothing: antialiased;
+    position: relative;
+}
+
+.top-bar {
+    background-color: #15549a;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.container {
+    max-width: auto;
+}
+#container p {
+    display: inline;
+}
+
+p {
+    margin: 0 0 26px;
+    line-height: 1.6;
+    font-weight: 400;
+}
+p:last-child {
+    margin-bottom: 0px;
+}
+
+.top-text {
+    padding-left: 20px;
+    line-height: 1.6;
+}
+
+.mail-text {
+    border-right-color: #15549a;
+    border-right: 2px solid #1b5ca5;
+    color: white;
+}
+
+.text-right {
+    text-align: right !important;
+}
+
+.header {
+    background-color: rgba(255, 255, 255, 1);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    z-index: 99;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    border: none;
+    line-height: normal;
+    vertical-align: middle;
+}
+
+.nav-item {
+    text-transform: uppercase;
+}
+
+@media screen and (min-width: 576px) {
+    .dropdown-menu {
+        display: block;
+        opacity: 0;
+        transition: all 0.25s ease;
+        text-transform: none;
+    }
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+    opacity: 1;
+}
+.column-container {
+    padding-left: 0;
+    padding-right: 0;
+}
+.column-container .column-inner {
+    box-sizing: border-box;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+}
+.column-inner:before .column-inner:after {
+    content: " ";
+    display: table;
+}
+.column-container .column-inner .wrapper .content {
+    background-color: #fff !important;
+    margin-bottom: 60px;
+    padding: 40px;
+    border: 1px solid #dee4ee;
+    box-shadow: 0px 4px 16px 3px rgba(213, 221, 234, 0.5);
+    text-align: center;
+}
+h2{
+    font-size: 24px;
+    line-height: 32px;
+}
+.page-header {
+    margin: 0;
+    padding: 175px 0px 80px;
+    min-height: 410px;
+    border: none;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+        rgba(0, 0, 0, 0.2) no-repeat center;
+    background-size: cover;
+}
+.page-breadcrumb .breadcrumb {
+    background-color: transparent;
+    padding: 0px;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #15549a;
+}
+.page-breadcrumb .breadcrumb span {
+    color: #444;
+    font-weight: 700;
+}
+.bg-white {
+    background-color: white;
+}
+.pin-side30 {
+    padding: 30px;
+}
+.pin-side40
+{
+    padding: 40px;
+}
+.mb20
+{
+    margin-bottom: 20px;
+}
+.mb40
+{
+    margin-bottom: 40px;
+}
+.page-title {
+    margin-bottom: 0px;
+    font-size: 36px;
+}
+#sub-nav #menu-button {
+    display: none;
+}
+.nav {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+.nav-justified {
+    width: 100%;
+}
+.wrapper-content
+{
+    margin-top: -40px;
+    margin-bottom: 100px;
+    position: relative;
+}
+.loan-eligibility-block
+{
+    padding: 30px;
+    background: #eff3f8;
+}
+.content-element
+{
+    margin-top: 40px!important;
+    margin-bottom: 35px;
+}
+.form-group
+{
+    margin-bottom: 1em;
+}
+.loan-eligibility-form .form-group{
+    display: block;
+}
+.control-label{
+    text-transform: uppercase;
+    color: #3c4d6b;
+    font-size: 13px;
+    font-weight: 600;
+}
+.loan-eligibility-form .control-label
+{
+    margin-bottom: 10px;
+}
+.input-group-addon
+{
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 36px;
+    color: #555;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.loan-eligibility-form .input-group-addon
+{
+    border-left: 2px solid #e6ecef;
+    border-top: 2px solid #e6ecef;
+    border-bottom: 2px solid #e6ecef;
+    background: #fff;
+}
+.eligibility-text
+{
+    font-size: 21px;
+}
+.eligibility-amount
+{
+    font-size: 52px;
+    font-weight: 600;
+    color: #15549a;
+}
+.btn
+{
+    font-size: 14px;
+    border-radius: 2px;
+    line-height: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 20px 30px;
+    border: none;
+    font-weight: 600;
+}
+.btn-default
+{
+    color: #fff;
+    border-color: #f51f8a;
+    background-color: #f51f8a;
+}
+.btn-primary{
+    border-bottom-color: #15549a;
+    background-color: #15549a;
+}
+.footer {
+    background-color: #1e2127;
+    color: #ccc;
+}
+.section-space80 {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.newsletter-title {
+    color: #ccc;
+    margin-top: 10px;
+    font-weight: 500;
+}
+.newsletter-form {
+    margin-bottom: 30px;
+}
+.input-group {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%;
+}
+.input-group .btn {
+    font-size: 14px;
+    border-radius: 2px;
+    line-height: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 20px 30px;
+    border: none;
+    font-weight: 600;
+}
+.input-group .btn-default {
+    background-color: #f51f8a;
+    color: #fff;
+    border-color: #f51f8a;
+}
+.mt40 {
+    margin-top: 40px;
+}
+.widget-footer {
+    position: relative;
+    padding-left: 20px;
+    line-height: 32px;
+    font-weight: 500;
+}
+.list_none {
+    list-style: none;
+    margin: 0px 0px 20px 0px;
+    padding: 0;
+}
+.widget-footer ul li {
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+.widget-footer ul li:before {
+    font-family: "FontAwesome";
+    display: block;
+    position: absolute;
+    left: 0;
+    font-size: 15px;
+    color: #ccc;
+    content: "\f105";
+}
+.widget-footer ul li a {
+    color: #ccc;
+    text-decoration: none;
+}
+.widget-footer ul li a:hover {
+    color: #f51f8a;
+}
+.widget-social ul li {
+    line-height: 1.6;
+    margin-bottom: 8px;
+}
+.widget-social ul li a {
+    color: #ccc;
+    font-weight: 500;
+    text-decoration: none;
+}
+.widget-social ul li a:hover {
+    color: #f51f8a;
+    text-decoration: underline;
+}
+.widget-social ul li a i {
+    width: 30px;
+}
+.tiny-footer {
+    background-color: #16191e;
+    font-size: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #999;
+}
+#to-the-top {
+    position: fixed;
+    text-align: center;
+    right: 10px;
+    bottom: 40px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 2px;
+    z-index: 10000;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    background-color: #f51f8a;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: #f51f8a 0.1s linear;
+    opacity: 0.6;
+}
